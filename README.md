@@ -13,17 +13,6 @@ A Python toolkit for testing RL algorithms that provides an implementation for d
   Cython cffi glfw imageio lockfile pycparser pillow zipp gym
 ```
 
-## Installing Box2D and Atari 2600 ROMs
-
-Must be installed to allow usage of OpenAI Gym's Box2D and Atari environments.
-
-1. To install Box2D , a 2D Game Physics for Python which runs environments such as Lunar Lander and Mountain Car, one can visit their [github repository](https://github.com/pybox2d/pybox2d) and follow the installation guide.
-2. In order to import ROMs for Atari 2600 environments, one needs to download RoTms.rar from the [Atari 2600 VCS ROM Collection](http://www.atarimania.com/rom_collection_archive_atari_2600_roms.html). The archive must then be extracted, followed by the bash command:
-
-```shell
-   $ python3 −m atari_py.import_roms <path-to-folder>
-```
-
 ## Installing Keras-RL2
 
 A deep RL library for Keras that has implementations of state-of-the-art RL algorithms such as DQN, CEM and SARSA. Integrates with OpenAI Gym out of the box, and has support for TensorFlow 2. 
