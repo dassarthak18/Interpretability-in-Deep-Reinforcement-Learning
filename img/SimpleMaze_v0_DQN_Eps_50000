@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="X[7] <= 0.5\ngini = 0.735\nsamples = 80000\nvalue = [17220, 28471, 17174, 17135]\nclass = 1", fillcolor="#defadc"] ;
+1 [label="X[0] <= 2.5\ngini = 0.695\nsamples = 68516\nvalue = [5736, 28471, 17174, 17135]\nclass = 1", fillcolor="#d7f9d3"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="X[13] <= 0.5\ngini = 0.568\nsamples = 51310\nvalue = [0, 28471, 5704, 17135]\nclass = 1", fillcolor="#c2f6bd"] ;
+1 -> 2 ;
+3 [label="X[4] <= 0.5\ngini = 0.532\nsamples = 45616\nvalue = [0, 28471, 5704, 11441]\nclass = 1", fillcolor="#a3f29c"] ;
+2 -> 3 ;
+4 [label="X[1] <= 2.5\ngini = 0.32\nsamples = 28465\nvalue = [0, 22761, 5704, 0]\nclass = 1", fillcolor="#75ec6b"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 22761\nvalue = [0, 22761, 0, 0]\nclass = 1", fillcolor="#47e539"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 5704\nvalue = [0, 0, 5704, 0]\nclass = 2", fillcolor="#399de5"] ;
+4 -> 6 ;
+7 [label="X[1] <= 2.5\ngini = 0.444\nsamples = 17151\nvalue = [0, 5710, 0, 11441]\nclass = 3", fillcolor="#eb9cf2"] ;
+3 -> 7 ;
+8 [label="gini = 0.0\nsamples = 11441\nvalue = [0, 0, 0, 11441]\nclass = 3", fillcolor="#d739e5"] ;
+7 -> 8 ;
+9 [label="gini = 0.0\nsamples = 5710\nvalue = [0, 5710, 0, 0]\nclass = 1", fillcolor="#47e539"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 5694\nvalue = [0, 0, 0, 5694]\nclass = 3", fillcolor="#d739e5"] ;
+2 -> 10 ;
+11 [label="X[1] <= 0.5\ngini = 0.444\nsamples = 17206\nvalue = [5736, 0, 11470, 0]\nclass = 2", fillcolor="#9ccef2"] ;
+1 -> 11 ;
+12 [label="gini = 0.0\nsamples = 5736\nvalue = [5736, 0, 0, 0]\nclass = 0", fillcolor="#e58139"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 11470\nvalue = [0, 0, 11470, 0]\nclass = 2", fillcolor="#399de5"] ;
+11 -> 13 ;
+14 [label="gini = 0.0\nsamples = 11484\nvalue = [11484, 0, 0, 0]\nclass = 0", fillcolor="#e58139"] ;
+0 -> 14 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
