@@ -1,5 +1,5 @@
 # Interpretability-in-Deep-Reinforcement-Learning
-The Jupyter notebook was written for and run in Google Colaboratory, with the data files mounted in Google Drive. To run the notebook locally, Python 3.5+ as well as python3-pip is required. The following prerequisites must also be installed (tested in an Ubuntu 21.10 system).
+The Jupyter notebook was written for and run in Google Colaboratory, with the source code mounted in Google Drive. To run the notebook locally, Python 3.5+ as well as python3-pip is required. The following prerequisites must also be installed (tested in an Ubuntu 21.10 system).
 
 ## Installing OpenAI Gym
 
