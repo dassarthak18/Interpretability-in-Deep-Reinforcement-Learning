@@ -1,13 +1,13 @@
 digraph Tree {
 node [shape=box, style="filled", color="black", fontname="helvetica"] ;
 edge [fontname="helvetica"] ;
-0 [label="X[0] <= 6.0\ngini = 0.534\nsamples = 80000\nvalue = [49707, 20201, 10092]\nclass = 0", fillcolor="#f2c19d"] ;
-1 [label="gini = 0.0\nsamples = 49707\nvalue = [49707, 0, 0]\nclass = 0", fillcolor="#e58139"] ;
+0 [label="X[0] <= 6.0\nentropy = 1.305\nsamples = 80000\nvalue = [49707, 20201, 10092]\nclass = 0", fillcolor="#f2c19d"] ;
+1 [label="entropy = 0.0\nsamples = 49707\nvalue = [49707, 0, 0]\nclass = 0", fillcolor="#e58139"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label="X[0] <= 11.5\ngini = 0.444\nsamples = 30293\nvalue = [0, 20201, 10092]\nclass = 1", fillcolor="#9cf2c0"] ;
+2 [label="X[0] <= 11.5\nentropy = 0.918\nsamples = 30293\nvalue = [0, 20201, 10092]\nclass = 1", fillcolor="#9cf2c0"] ;
 0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
-3 [label="gini = 0.0\nsamples = 20201\nvalue = [0, 20201, 0]\nclass = 1", fillcolor="#39e581"] ;
+3 [label="entropy = 0.0\nsamples = 20201\nvalue = [0, 20201, 0]\nclass = 1", fillcolor="#39e581"] ;
 2 -> 3 ;
-4 [label="gini = 0.0\nsamples = 10092\nvalue = [0, 0, 10092]\nclass = 2", fillcolor="#8139e5"] ;
+4 [label="entropy = 0.0\nsamples = 10092\nvalue = [0, 0, 10092]\nclass = 2", fillcolor="#8139e5"] ;
 2 -> 4 ;
 }

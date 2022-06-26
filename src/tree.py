@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, export_graphviz
 from src.data import output
 
-def build_tree(env,filename,split=0.33,num=None):
+def build_tree(env,filename,split=0.33,imp=0,num=None):
   # Defining parameters
   try:
     n = env.observation_space.shape[0]
@@ -29,7 +29,7 @@ def build_tree(env,filename,split=0.33,num=None):
   Y_encoded = np.array(Y)
 
   # Building the Decision Tree
-  Tree = DecisionTreeClassifier(max_depth=num)
+  Tree = DecisionTreeClassifier(criterion='entropy',min_impurity_decrease=imp,max_depth=num)
   X1_encoded = []
   n = len(X_encoded[0])
   for i in range(n):
